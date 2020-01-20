@@ -1,0 +1,456 @@
+body{
+margin:0;
+font-family:Tahoma,Verdana;
+font-size:19px;
+font-stretch:condensed;
+box-sizing:border-box;
+background:black;
+color:white !important;
+
+}
+
+a:focus{
+	color:white;
+	text-decoration:none;
+}
+
+.container1{
+	padding-top:75px;	
+}
+/*---------HEADER------------*/
+.header{
+	background:#131313;
+	width:100%;
+	display:block;
+	position:fixed;
+	z-index: 3;
+	
+}
+.icons{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between ;
+    
+}
+.icons1{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between ;
+	
+}
+
+/*NUMBER*/
+.number_khan{
+	color:white;
+}
+
+.call{
+	font-size:27px;
+}
+.number_khan:hover{
+	color:#e30512;
+	cursor:pointer;
+	text-decoration:none;
+}
+/*ICONS*/
+.glyphicon{
+    width: 45px;
+    height: 45px;
+	color:white;
+	font-size:20px;
+	border:3px  white solid;
+	border-radius:50%;	
+	line-height: 40px;  
+   
+}
+.glyphicon:hover{
+	background:white;
+/*	transition:.2s color ease-in;*/
+}
+    /*TELEGTAM*/
+.glyphicon-send{
+   padding-top:-10px;
+   padding-left:8px;
+}
+	
+.glyphicon-send:hover{
+	background:#28a1da;
+}
+   /*WHATSAPP*/
+.glyphicon-earphone{
+	padding-left:9px;
+}
+.glyphicon-earphone:hover{
+	background:#43b51f;
+	
+}
+   /*MAIL*/
+   .glyphicon-envelope{
+	   padding-left:10px;	   
+   }
+    .glyphicon-envelope:hover{
+	background:orange;
+	}
+	/*INSTAGRAM*/
+	.instagram{
+		font-size:20px;
+	border:3px  white solid;
+	border-radius:50%;	
+	line-height: 40px;  
+	width: 45px;
+    height: 45px;
+    padding-left:5px;
+    padding-top:5px;
+    fill:white;
+	
+	}
+	.instagram:hover{
+		background:#b30a7d;
+	}
+	.icon1,.icon2,.icon3{
+		padding-top:7px;
+		margin-right:30px;
+		margin-right:30px;
+		
+	}
+	.icon4{
+		padding-top:7px;
+	}
+	.number1{
+		margin-top:10px;
+	}
+
+	/*
+----------------HEAD-------------
+*/
+.head{
+    background:rgb(0,0,0,.5);
+	width:100%;
+	height:`50px;
+	
+	position:absolute;
+	top:60px;
+    
+}
+
+.head_inner{
+	display:flex;
+	justify-content:space-between;
+}
+.logotip_text{
+font-weight:bold;
+
+}
+.logotip{
+
+	
+}
+
+/*-------------HEADER FOR PHONE------------*/
+.phone_header{
+	display:none;	
+}
+
+.nav-item{
+	text-align:center;
+}
+   .navbar-custom { 
+            background-color: #131313;
+			} 
+       
+
+/*
+---------------NAV-------------
+*/
+
+.nav{
+text-decoration:none;
+padding-top:3px;
+
+}
+.nav_link{
+	color:white;
+	
+    padding-right:20px;
+	font-size:18px;
+	font-weight:bold;
+
+	
+}
+.nav_link:hover{
+	color:#e30512;
+transition:color .3s linear;
+text-decoration:none;
+ 
+}
+	
+/*--------------INTRO------------*/
+
+.intro{
+	 overflow: hidden;
+	height: 100vh;
+	background-color: black;
+	background-image: url("khan_img/logo1.jpg");
+	background-size: cover;
+	background-position: center;
+
+   }
+.intro_item{
+color:white;
+	text-align:center;
+	padding-top:220px;
+	
+}
+
+
+/*TEXT*/
+.text1{
+	font-weight:bold;	
+	
+}
+.red{
+	color:#e30512;
+}
+
+.text2{
+	padding-left:20px;
+	padding-right:auto;
+}
+
+
+/*-----------ABOUT-----------*/
+.about{
+	color:white;
+	background:black;
+	
+	padding-bottom:20px;
+}	
+
+.about_inner{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.about_title{
+margin-right:40px;
+}
+
+.logo_khan{
+	padding-top:2%;
+	padding-right:20px;
+	padding-left:20px;
+	
+}
+.logo-khan{
+	height:300px;
+	width:300px;
+}
+.zagolovok1{
+	padding-left:20px;
+
+}
+
+
+
+
+/*------VIDEO---------*/
+video{
+	outline:none;
+height:100%;
+
+}
+
+
+/*---------WORKS------------*/
+.works_zagolovok{
+	padding-bottom:20px;
+    text-align:center;
+	}
+.works{
+	display:flex;
+	flex-wrap:wrap;
+}
+.works_item{
+	width:25%;
+	height:350px;
+	position:relative;
+	overflow:hidden;
+}
+.works_item:hover .works_content{
+	opacity:1;
+}
+.works_photo{
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index:1;
+	
+	transform:translate3d(-50%,-50%,0);
+}
+.works_content{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width:100%;
+	height:100%;
+	background-color:rgb(0,0,0,.7);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	text-align:center;
+	opacity:0;
+	transition:opacity .2s linear;
+}
+.works_text{
+	font-size:14px;
+	color:white;
+}
+.works_title{
+	margin-bottom:5px;
+	font-weight:bold;
+	font-size:14px;
+	color:white;
+	text-decoration:uppercase;
+	
+	
+}
+
+
+/*------------COMMENTS--------------*/
+.slick-active {
+  outline: none;
+}
+
+.slider_comment{
+		text-align:center;
+}
+
+.slider_content{
+	display:flex;
+	flex-direction:column;
+margin-left:30%;
+margin-right:30%;	
+}
+.author{
+	opacity:.5;
+	font-family:Appetite New;
+}
+.img_slide{
+	height:200px;
+	width:200px;
+	border:2px white solid;
+	border-radius:120px;
+}
+.slick-dots li button::before {
+    
+    color: white;
+    font-size:10px;
+  }
+
+  .slick-dots li.slick-active button::before {
+    color: white;
+   font-size:10px;
+    
+  }
+  .comment{
+	  padding-bottom:10px;
+  }
+
+/*------------FOOTER--------------*/
+.footer{
+	background:#131313;
+	
+	width:100%;
+	
+}
+.footer_inner{
+	display:flex;
+	flex-direction:rows;
+	justify-content:space-between;
+	margin-top:30px;
+}
+.logotip_footer{
+	
+}
+.footer_ul{
+list-style-type: none;
+}
+
+.nav_footer{
+	color:white;
+	font-size:18px;	
+}
+.nav_footer:hover{
+	color:#e30512;
+transition:color .3s linear;
+text-decoration:none;
+ 
+}
+.footer_email{
+	display:block;
+}
+.ul{
+	display:block;
+}
+
+
+/*------------ADAPTIVE FOR PHONE------------*/
+@media screen and (max-width: 600px) {
+   .header{
+		display:none;
+	}
+	.head{
+		display:none;
+	}
+	.ul{
+		display:none;
+	}
+    .phone_header{
+		display:block;
+
+	}  
+.footer_inner{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	margin-top:30px;
+}
+  .about_inner{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.footer{
+	padding-bottom:30px;
+}
+.footer_email{
+	display:none;
+}
+.logo-khan{
+	width:100%;
+	height:50%;
+}
+.slick-dots{
+	   margin-bottom:10px;
+}
+.slider_content{
+margin-right:20%;
+margin-left:20%;
+}
+.intro_item{
+	margin-top:100px;
+	
+	padding-top:0;
+}
+.text1{
+	font-size:24px;
+}
+body{
+	font-size:16px;
+}
+  }
+   
+@media screen and (max-width: 250px) {
+.contakt{margin-right:10px;}
+}
